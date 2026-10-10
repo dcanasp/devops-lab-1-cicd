@@ -2,13 +2,11 @@ name: Destroy CI/CD Pipeline (Lab 1)
 
 on:
   workflow_dispatch:
-    inputs:
 
 
 env:
-  student_suffix: ${{ vars.STUDENT_SUFFIX }}
+  STUDENT_SUFFIX: ${{ vars.STUDENT_SUFFIX }}
   AWS_REGION: ${{ vars.AWS_REGION || 'us-east-1' }}
-  STUDENT_SUFFIX: ${{ inputs.student_suffix || vars.STUDENT_SUFFIX || 'test-student' }}
   ECR_REPOSITORY: greeting-${{ inputs.student_suffix || vars.STUDENT_SUFFIX || 'test-student' }}
 
 jobs:
