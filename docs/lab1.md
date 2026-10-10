@@ -3,9 +3,12 @@ Para este laboratorio se utilizan contenedores para poder construir y ejecutar l
 
 El siguiente paso es tener el registro de los artifactor OCI-compliant. al ser creado se va a hacer un push de esa image (con el tag de el hash del commit)
 
+Ademas se tienen principios de ci / cd claros, como multiples ambientes independientes, etapas independientes que dependen de las anteriores, manejo correcto de secretos y variables
+
 # 2.
 
 ![deploy](Deploy.png)
+![deployIp](deployIp.png)
 ![destroy](destroy.png)
 # 3. 
 
